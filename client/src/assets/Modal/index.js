@@ -1,5 +1,5 @@
 import React from "react";
-import Add from "../Add";
+import { Add } from "../Pin";
 
 function objControl() {
     let note = {"time": new Date().toLocaleTimeString(), desc: document.getElementsByName("desc")[0].value};
@@ -9,7 +9,7 @@ function objControl() {
 export default function Modal() {
     return (
         <div className="modal">
-            <form onSubmit={(e) => {e.preventDefault(); objControl();}}>
+            <form onSubmit={() => {objControl();}}>
                 <textarea name="desc" required autoFocus={true} placeholder="description here" />
                 <input type="submit" value="create note"/>
             </form>

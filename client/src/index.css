@@ -1,7 +1,10 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   cursor: url(./assets/More/djo+8+bit+mouse+2.png),auto;
   scroll-behavior: smooth;
-  transition-duration: .08s;
+  transition: all .2s ease-in-out;
 }  
 
 body {
@@ -11,11 +14,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-size: calc(16px + .4vw);
+  background-color: rgb(17, 16, 16);
+  color: white;
 }
 
 .canvas {
@@ -25,17 +26,19 @@ code {
 }
 
 .sct-1 {
+  height: 60vh;
   margin: 10px 0;
-  height: 80vh;
-  border: solid black 1px;
+  border: solid white 1px;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .nav {
   margin: 10px 0;
   padding: 25px;
-  border: dashed black 2px;
+  border: dashed white 2px;
   text-align: center;
   list-style: none;
   display: flex;
@@ -63,13 +66,23 @@ code {
 }
 
 .container {
-  border: 1px dashed black;
-  margin: 2%;
+  text-align: center;
+  border: 1px dashed white;
+  margin: 0.8%;
   padding: 0.8%;
+  height: fit-content;
   width: fit-content;
-  transition: all .2s ease-in-out; 
 }
 
 .container:hover {
-  transform: scale(1.1);
+  padding: 2%;
+}
+
+.nav button:hover {
+  margin: 2%;
+}
+
+.btn-rem:hover {
+  transform: scale(1.23);
+  background-color: red;
 }

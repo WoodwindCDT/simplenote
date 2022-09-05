@@ -1,4 +1,5 @@
 import React from "react";
+import { Remove } from "../../assets/Pin";
 
 // props.rem to SHOW delete button
 export default function Note(props) {
@@ -12,11 +13,11 @@ export default function Note(props) {
                         {a}
                     </div>
                     <span className="time">{props.tasks[i].time}</span> <br />
-                    {props.rem ? <button className="btn-rem" onClick={() => alert("Dare delete me?!")}>X</button> : null}
+                    {props.rem ? <button className="btn-rem" onClick={(e) => Remove(e.target.parentNode.id)}>X</button> : null}
                 </div>
             ); 
         }
         return board;
     }
-    return "Let's add some notes!";
+    return "no notes!";
 } 

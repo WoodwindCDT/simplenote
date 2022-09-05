@@ -1,5 +1,5 @@
 import React from "react";
-import Add from "../../assets/Add";
+import { Add } from "../../assets/Pin";
 
 export default function Navigator(props) {
     return (
