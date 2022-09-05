@@ -1,3 +1,9 @@
+* {
+  cursor: url(./assets/More/djo+8+bit+mouse+2.png),auto;
+  scroll-behavior: smooth;
+  transition-duration: .08s;
+}  
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,60 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.canvas {
+  width: 80%;
+  height: 90vh;
+  margin: 0 auto;
+}
+
+.sct-1 {
+  margin: 10px 0;
+  height: 80vh;
+  border: solid black 1px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.nav {
+  margin: 10px 0;
+  padding: 25px;
+  border: dashed black 2px;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.nav li button {
+  padding: 1.5%;
+  margin: 0.8%;
+}
+
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  margin: 20% auto;
+  padding: 20px;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 80%;
+  background-color: white;
+  opacity: 90%;
+  border: solid green 6px;
+}
+
+.container {
+  border: 1px dashed black;
+  margin: 2%;
+  padding: 0.8%;
+  width: fit-content;
+  transition: all .2s ease-in-out; 
+}
+
+.container:hover {
+  transform: scale(1.1);
 }
