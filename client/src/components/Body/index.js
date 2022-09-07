@@ -12,7 +12,6 @@ export default function Body() {
 
     return (
     /* OnClick functionality to add new sticky note */
-    /* e.target !== e.currentTarget - used for checking element*/ 
     <>
         <Canvas add={add} remove={rem}/>
         <Navigator setAdd={startAdd} setRem={startRem}/>

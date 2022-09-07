@@ -9,10 +9,10 @@ export default function Note(props) {
             let a = props.tasks[i].desc;
             board.push(
                 <div id={i} key={i} className="container">
-                    <div className={props.rem ? "rem desc " : "desc"}>
+                    <div className="desc">
                         {a}
                     </div>
-                    <span className="time">{props.tasks[i].time}</span> <br />
+                    <span className="time">{props.tasks[i].due ? "Due: " + props.tasks[i].due : "Pinned: " + props.tasks[i].time}</span> <br />
                     {props.rem ? <button className="btn-rem" onClick={(e) => Remove(e.target.parentNode.id)}>X</button> : null}
                 </div>
             ); 
