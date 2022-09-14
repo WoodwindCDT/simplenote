@@ -11,7 +11,7 @@ function objControl() {
 export default function Modal() {
     return (
         <div className="modal">
-            <form onSubmit={() => {objControl();}}>
+            <form onSubmit={() => {objControl()}}>
                 <textarea name="desc" required autoFocus={true} placeholder="description here" />
                 <input type="date" id="dueBy" min={new Date().toLocaleDateString('en-CA')}></input>
                 <input type="submit" value="Pin"/>

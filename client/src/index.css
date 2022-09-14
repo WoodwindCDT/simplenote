@@ -15,8 +15,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: calc(16px + .4vw);
-  background-color: rgb(17, 16, 16);
+}
+
+.lightmode {
+  background-color: white;
+  color: black;
+}
+
+.darkmode {
   color: white;
+  background-color: rgb(17, 16, 16);
 }
 
 .canvas {
@@ -75,11 +83,15 @@ body {
 }
 
 .container:hover {
-  padding: 2%;
+  border-radius: 5%;
+  border-width: 2px;
+  border-color: orange;
 }
 
 .nav button:hover {
-  margin: 2%;
+  border-radius: 5%;
+  color: white;
+  background-color: black;
 }
 
 .btn-rem:hover {
