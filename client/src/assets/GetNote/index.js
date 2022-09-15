@@ -7,7 +7,7 @@ function colorCalc(prop) {
         let today = new Date();
         var diffMs = (new Date(prop) - today); // milliseconds between now & Christmas
         var diffDays = Math.floor(diffMs / 86400000); // days
-        return '165, ' + diffDays + ', 60';
+        return '60, ' + diffDays + ', 225';
     }
     return null;
 }
@@ -15,7 +15,10 @@ function colorCalc(prop) {
 function getTasks() {
     const storedTasks = JSON.parse(localStorage.getItem("tasks"));
     if (getSort()) {
-        if (storedTasks != null) return storedTasks.sort((a,b) => (a.due > b.due) ? 1 : ((b.due > a.due) ? -1 : 0))
+        if (storedTasks != null) {
+            storedTasks.sort((a,b) => (a.due > b.due) ? 1 : ((b.due > a.due) ? -1 : 0)); // auto sort for due date!
+            return storedTasks.sort((a, b) => Number(a.note) - Number(b.note)); // auto sort for assignments first!
+        }
     }
     return storedTasks;
 }
@@ -28,7 +31,7 @@ export default function GetNote(props) {
         for (let i = 0; i < tasks.length; i++) {
             let a = tasks[i].desc;
             board.push(
-                <div id={i} key={i} className="container" style={(getColor()) ? {background: `rgb(${colorCalc(tasks[i].due)})`} : {border: getTheme() ? null : '2px dashed black'}}>
+                <div id={i} key={i} className="container" style={(getColor()) ? {background: (tasks[i].note) ? null : `rgb(${colorCalc(tasks[i].due)})`} : {border: getTheme() ? null : '2px dashed black'}}>
                     <div className="desc">
                         {a}
                     </div>
