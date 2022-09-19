@@ -7,19 +7,8 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 const FILES_TO_CACHE = [
     "./",
     "./index.html",
-    "./static/js/index.js",
-    "./static/js/App.js",
-    "./static/js/components/Body/index.js",
-    "./static/js/components/Canvas/index.js",
-    "./static/js/components/Navigator/index.js",
-    "./static/js/components/Setting/index.js",
-    "./static/js/assets/Action/index.js",
-    "./static/js/assets/GetNote/index.js",
-    "./static/js/assets/Getters/index.js",
-    "./static/js/assets/Modal/index.js",
-    "./static/js/assets/More/index.js",
-    "./static/js/assets/Pin/index.js",
-    "./static/css/index.css",
+    "./static/js/main.bc233bc2",
+    "./static/css/main.01f72d0a.css",
     "./logo192.png",
     "./logo512.png"
 ];
