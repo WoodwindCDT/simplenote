@@ -7,7 +7,7 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 const FILES_TO_CACHE = [
     "./",
     "./index.html",
-    "./static/js/main.bc233bc2",
+    "./static/js/main.bc233bc2.js",
     "./static/css/main.01f72d0a.css",
     "./logo192.png",
     "./logo512.png"
