@@ -3,14 +3,16 @@
   "short_name": "simplenote",
   "description": "simplenote is an application that organizes to-do's and notes. The application allows for customizable filtering, coloring, and even a theme.",
   "lang": "en-US",
-  "start_url": "/",
+  "start_url": "/simplenote/",
   "display": "standalone",
+  "background_color": "111010",
   "theme_color": "#111010",
   "icons": [
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "128x128"
+      "sizes": "192x192",
+      "purpose": "maskable"
     },
     {
       "src": "logo512.png",
