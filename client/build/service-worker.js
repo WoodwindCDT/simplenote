@@ -5,7 +5,7 @@ const VERSION = 'version_01';
 // Constants for CACHE_NAME && FILES_TO_CACHE: `Sending specific files to cache on load`
 const CACHE_NAME = APP_PREFIX + VERSION;
 const FILES_TO_CACHE = [
-    "/",
+    "./",
     "./index.html",
     "../src/index.js",
     "../src/App.js",
