@@ -7,8 +7,8 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 const FILES_TO_CACHE = [
     "./",
     "./index.html",
-    "./src/index.js",
-    "./src/App.js",
+    "./index.js",
+    "./App.js",
     "./src/components/Body/index.js",
     "./src/components/Canvas/index.js",
     "./src/components/Navigator/index.js",
@@ -19,7 +19,7 @@ const FILES_TO_CACHE = [
     "./src/assets/Modal/index.js",
     "./src/assets/More/index.js",
     "./src/assets/Pin/index.js",
-    "./src/index.css",
+    "./index.css",
     "./logo192.png",
     "./logo512.png"
 ];
