@@ -13,11 +13,13 @@ function colorCalc(prop) {
 }
 
 function getTasks() {
-    const storedTasks = JSON.parse(localStorage.getItem("tasks"));
+    let storedTasks = JSON.parse(localStorage.getItem("tasks"));
     if (getSort()) {
         if (storedTasks != null) {
-            storedTasks.sort((a,b) => (a.due > b.due) ? 1 : ((b.due > a.due) ? -1 : 0)); // auto sort for due date!
-            return storedTasks.sort((a, b) => Number(a.note) - Number(b.note)); // auto sort for assignments first!
+            storedTasks = storedTasks.sort((a,b) => (a.due > b.due) ? 1 : ((b.due > a.due) ? -1 : 0)); // auto sort for due date!
+            storedTasks = storedTasks.sort((a, b) => Number(a.note) - Number(b.note)); // auto sort for assignments first!
+            localStorage.setItem('tasks', JSON.stringify(storedTasks));
+            return storedTasks;
         }
     }
     return storedTasks;
@@ -38,7 +40,7 @@ export default function GetNote(props) {
                     <span className="time">{tasks[i].due ? "Due: " + tasks[i].due : "Pinned: " + tasks[i].time}</span> <br />
                     {props.rem ? <button className="btn-rem" onClick={(e) => {Remove(e.target.parentNode.id); setTasks(getTasks())}}>DELETE</button> : null}
                 </div>
-            ); 
+            );
         }
         return board;
     }

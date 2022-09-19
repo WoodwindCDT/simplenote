@@ -1,0 +1,21 @@
+{
+    "name": "simplenote by Cristian Turbeville",
+    "short_name": "simplenote",
+    "description": "simplenote is an application that organizes to-do's and notes. The application allows for customizable filtering, coloring, and even a theme.",
+    "lang": "en-US",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#111010",
+    "icons": [
+      {
+        "src": "logo192.png",
+        "type": "image/png",
+        "sizes": "128x128"
+      },
+      {
+        "src": "logo512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+}  

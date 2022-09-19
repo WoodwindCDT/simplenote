@@ -19,7 +19,7 @@ body {
 
 .lightmode {
   background-color: white;
-  color: black;
+  color: rgb(17, 16, 16);
 }
 
 .darkmode {
