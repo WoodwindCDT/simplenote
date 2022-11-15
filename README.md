@@ -8,4 +8,4 @@
 
 ### Development
 
-The application uses localstorage to store user input into an array "tasks," which stores the data as an object {date: "String", desc: "String"}
+The application uses localstorage to store user input into an array "tasks," which stores the data as an object
