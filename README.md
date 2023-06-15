@@ -4,8 +4,18 @@
 
 > Access to your notes is limited to the browser's storage. By deleting the browser's cache, you may delete your saved notes!
 
-- Site: **https://woodwindcdt.github.io/simplenote/**
+- Try it out! ->  **https://woodwindcdt.github.io/simplenote/**
 
-### Development
+Like What You See?
+-- 
+Install SimpleNote on your Computer or Mobile Phone!
 
-The application uses localstorage to store user input into an array "tasks," which stores the data as an object
+- **Installation Instructions**: [Click Me!](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Installing)
+
+You can also add SimpleNote to your start up applications
+
+- **Startup Instructions**: [Click Me!](https://support.microsoft.com/en-us/windows/add-an-app-to-run-automatically-at-startup-in-windows-10-150da165-dcd9-7230-517b-cf3c295d89dd)
+
+_Shown on Desktop_
+
+![Image](https://i.ibb.co/z2phhsR/img1.png)
